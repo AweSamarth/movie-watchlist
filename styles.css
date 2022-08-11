@@ -14,7 +14,7 @@ body{
     height:100%;
     width:100%;
     box-sizing:border-box;
-    background: #121212;
+    background: #1C1C1C;
     color:white;
     font-family:Inter;
     /* border:1px solid white; */
@@ -25,15 +25,13 @@ body{
     display:flex;
     flex-wrap:wrap;
     height:auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 45%;
     align-content: flex-start;
     justify-content: center;
 }
 
 .header{
-    position: sticky;
-    top:0;
     display:flex;
     align-items: center;
     background:url(image.png);
@@ -86,7 +84,7 @@ body{
     display:flex;
     /* border:1px solid white; */
     position: sticky;
-    top:12em;
+    top:1em;
     border-radius:5px;
     width:80%;
     height:40px;
@@ -120,7 +118,7 @@ input[type="text"]{
 }
 
 #something{
-    z-index:1;
+    z-index:999;
     color:#A5A5A5;
 
 
@@ -143,6 +141,7 @@ input[type="text"]::placeholder{
 }
 
 #thebutton{
+    
     background: #4B4B4B;
     width:100%;
     height:100%;
@@ -151,4 +150,33 @@ input[type="text"]::placeholder{
     border:transparent;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+#thebutton:hover{
+    cursor:pointer;
+
+}
+
+
+
+
+
+/*now for the results */
+.results{
+    width:100%;
+    color:red;
+    margin-top:-20px;
+    height:100%;
+    overflow: hidden;
+    padding-top:3.5em;
+    background:#121212;
+}
+
+#checkingimage{
+   width:20em;
+}
+
+.oneresult{
+    margin-left:2em;
+    margin-right:2em;
 }
