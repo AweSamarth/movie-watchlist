@@ -20,15 +20,13 @@ body{
 
 }
 
-.oneicon{
-    align-items: flex-start;
-    width: 100%;
-    /* border:1px solid white; */
-}
-.icontext{
-    /* border:1px solid white; */
-    width:100%;
-    font-size:1.5rem;
+
+#addsome{
+    cursor: pointer;
+    font-weight:unset;
+    font-size:1.2rem;
+    color:white;
+    margin-top:1.5em;
 }
 .mainthing{
     display:flex;
@@ -42,9 +40,10 @@ body{
 
 
 .initialfinal{
-    padding-left:0.5em;
-    padding-right:0.5em;
-    height:51vh;
+    
+    padding-left:0.2em;
+    padding-right:0.2em;
+    height:50vh;
     color:grey;
     opacity: 80%;
     display: flex;
@@ -53,7 +52,7 @@ body{
     justify-content: center;
     /* border:1px solid white; */
     text-align: center;
-    font-size:5em;
+    font-size:2em;
 }
 
 .header{
@@ -93,7 +92,6 @@ body{
 #mywatch{
     display: flex;
     /* border:1px solid white; */
-    text-align: justify;
 
 }
 
@@ -102,83 +100,8 @@ body{
 
 
 
-#searchbar{
-
-    display:flex;
-    /* border:1px solid white; */
-    position: sticky;
-    top:1em;
-    border-radius:5px;
-    width:80%;
-    height:40px;
-    margin-top:-20px;
-
-}
-
-#searcharea{
-    display: flex;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-    align-items: center;
-    background: #2E2E2F;
-    width:75%;
-    height:100%;
-    padding-left:0.5em;
-    /* border:1px solid red; */
-}
-
-input[type="text"]{
-    
-    border:none;
-    font-family:Inter;
-    padding-left:2.5em;
-    margin-left:-1.7em;
-    width:98%;
-    height:96%;
-    background: #2E2E2F;
-    color:#A5A5A5;
-}
-
-#something{
-    z-index:999;
-    color:#A5A5A5;
 
 
-}
-
-input[type="text"]{
-    outline:none;
-    
-}
-input[type="text"]::placeholder{
-    opacity:60%;
-    
-}
-
-#searchbutton{
-    align-items: center;
-    /* border:1px solid white; */
-    height:100%;
-    width:25%;
-}
-
-#thebutton{
-    
-    background: #4B4B4B;
-    width:100%;
-    height:100%;
-    font-family:Inter;
-    color:white;
-    border:transparent;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-#thebutton:hover{
-    cursor:pointer;
-
-}
 
 
 
@@ -186,17 +109,28 @@ input[type="text"]::placeholder{
 
 /*now for the results */
 .results{
-justify-content: center;
+    /* border:1px solid white; */
+    justify-content: center;
     display:flex;
     flex-direction:column;
     width:100%;
     color:white;
-    margin-top:-20px;
     overflow: hidden;
     padding-block:3.5em;
     background:#121212;
 }
 
+.oneicon{
+    align-items: flex-start;
+    width: 100%;
+    /* border:1px solid white; */
+}
+.icontext{
+    /* border:1px solid white; */
+    width:100%;
+    font-size:1.2rem;
+    font-weight: bold;
+}
 
 
 
@@ -204,19 +138,19 @@ justify-content: center;
     display:flex;
     flex-direction: row;
     /* border:1px solid white; */
+    padding-bottom: 1em;
     margin: 0em 2em 1.5em 2em;
     border-bottom: 1px solid white;
-    padding-bottom: 1em;
-
+    
 
 }
 #resultimage{
+    align-self: center;
     /* border:1px solid white; */
     display:inline;
     object-fit:cover;
     width:25%;
     height:14em;
-    align-self: center;
 }
 
 
@@ -284,23 +218,8 @@ justify-content: center;
 
 }
 
-#pensive{
-    color:white;
-}
 
 a{
     text-decoration: none;
     color:unset
-}
-
-@media(max-width:900px){
-    .mainthing{
-        width:75%;
-    }
-}
-
-@media(max-width:600px){
-    .mainthing{
-        width:100%;
-    }
 }
