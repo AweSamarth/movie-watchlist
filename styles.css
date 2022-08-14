@@ -169,13 +169,7 @@ justify-content: center;
 }
 
 
-#resultimage{
-    border:1px solid white;
-    display:inline;
-    object-fit:cover;
-   width:25%;
-   height:11em;
-}
+
 
 .oneresult{
     padding-block:1em;
@@ -186,9 +180,16 @@ justify-content: center;
 
 
 }
+#resultimage{
+    border:1px solid white;
+    display:inline;
+    object-fit:cover;
+   width:25%;
+   height:11em;
+}
 
 .resulttext{
     border:1px solid white;
-    margin-left:15%;
+    margin-left:1em;
     align-self:center
 }

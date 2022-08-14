@@ -5,28 +5,36 @@ document.getElementById("thesearchterm").addEventListener("keypress", function(e
 
     }
 })
+let newarr=[]
 function func(){
     const searchterm= document.getElementById("thesearchterm")
     const search=document.getElementById("")
     fetch(`http://www.omdbapi.com/?s=${searchterm.value}&apikey=9accb26`)
     .then(response=>response.json())
     .then(data=>{
-        console.log(data)
+        document.getElementById("results").innerHTML=''
+    console.log(data)
         // console.log(data.Search[0])
-        let mything=data.Search.map(result=>{
-            // console.log(result.Title)
-            const {Title:title, Poster:poster, Plot:plot}=result
-            // console.log(result.poster)
-            return (`
-                
-                <div class="oneresult">
-                <img src="${poster}" id="resultimage" />
-                ${title}</div> `)
+        for (let i=0;i<data.Search.length;i++){
+            fetch(`http://www.omdbapi.com/?t=${data.Search[i].Title}&apikey=9accb26`)
+            .then(theresponse=>theresponse.json())
+            .then(thedata=>{
+            //   console.log(thedata.Title)  
+              document.getElementById("results").innerHTML+=`<div class="oneresult">
+              <img src="${data.Search[i].Poster}" id="resultimage"/> 
+                <div class="resulttext">${thedata.Title}</div>
+              </div>`
+            })
 
-        }).join('')
-        // console.log(mything)
-        document.getElementById("results").innerHTML= `${mything}`
+        }
+
+        // console.log(newvar)
+        // document.getElementById('results').innerHTML=newvar
+   
+
 
 
     })
+
 }
+
