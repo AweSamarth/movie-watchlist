@@ -16,7 +16,7 @@ function func(){
     console.log(data)
         // console.log(data.Search[0])
         for (let i=0;i<data.Search.length;i++){
-            fetch(`http://www.omdbapi.com/?t=${data.Search[i].Title}&apikey=9accb26`)
+            fetch(`https://www.omdbapi.com/?t=${data.Search[i].Title}&apikey=9accb26`)
             .then(theresponse=>theresponse.json())
             .then(thedata=>{
             //   console.log(thedata.Title)  
