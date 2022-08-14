@@ -9,7 +9,7 @@ let newarr=[]
 function func(){
     const searchterm= document.getElementById("thesearchterm")
     const search=document.getElementById("")
-    fetch(`http://www.omdbapi.com/?s=${searchterm.value}&apikey=9accb26`)
+    fetch(`https://www.omdbapi.com/?s=${searchterm.value}&apikey=9accb26`)
     .then(response=>response.json())
     .then(data=>{
         document.getElementById("results").innerHTML=''
