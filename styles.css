@@ -2,16 +2,13 @@
     margin:0;
     padding:0;
 }
-html{
-    height:100%;
-}
+
 
 
 body{
     display:flex;
     /* align-items: center; */
     justify-content: center;
-    height:100%;
     width:100%;
     box-sizing:border-box;
     background: #1C1C1C;
@@ -24,7 +21,6 @@ body{
 .mainthing{
     display:flex;
     flex-wrap:wrap;
-    height:auto;
     /* border: 1px solid white; */
     width: 45%;
     align-content: flex-start;
@@ -40,14 +36,12 @@ body{
     /* border:1px solid blue; */
     justify-content: center;
     width:100%;
-    height:30%;
-
+    height:15em;
     margin-bottom: 0;
 }
 
 .aligner{
     width: 100%;
-    height: fit-content;
     display:flex;
     padding-left:4em;
     padding-right:4em;
@@ -163,20 +157,38 @@ input[type="text"]::placeholder{
 
 /*now for the results */
 .results{
+justify-content: center;
+    display:flex;
+    flex-direction:column;
     width:100%;
-    color:red;
+    color:white;
     margin-top:-20px;
-    height:100%;
     overflow: hidden;
-    padding-top:3.5em;
+    padding-block:3.5em;
     background:#121212;
 }
 
-#checkingimage{
-   width:20em;
+
+#resultimage{
+    border:1px solid white;
+    display:inline;
+    object-fit:cover;
+   width:25%;
+   height:11em;
 }
 
 .oneresult{
-    margin-left:2em;
-    margin-right:2em;
+    padding-block:1em;
+    display:flex;
+    flex-direction: row;
+    border:1px solid white;
+    margin: 0em 2em 1.5em 2em;
+
+
+}
+
+.resulttext{
+    border:1px solid white;
+    margin-left:15%;
+    align-self:center
 }

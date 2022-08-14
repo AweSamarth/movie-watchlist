@@ -26,7 +26,7 @@
 
             <div id="searchbar">
                 
-                <div id="searcharea"><i id="something" class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search here" spellcheck="false"/></div>
+                <div id="searcharea"><i id="something" class="fa-solid fa-magnifying-glass"></i><input id="thesearchterm" type="text" placeholder="Search here" spellcheck="false"/></div>
                 <div id="searchbutton"><input type="button" value="Search" id="thebutton"></div> 
             </div>
 
@@ -35,10 +35,14 @@
 
 
 
-            
-            <div class="results">
+
+            <div class="results" id="results">
                 <div class="oneresult">
-                    <img alt="check" src="image.png" id=checkingimage />
+                    <img alt="check" src="image.png" id="resultimage" />
+                    <div class="resulttext">Checker</div>
+                </div>
+                <div class="oneresult">
+                    <img alt="check" src="image.png" id="resultimage" />
                 </div>
             </div>
 
@@ -48,4 +52,5 @@
 
         </div>
     </body>
+    <script src="index.js"></script>
 </html>
